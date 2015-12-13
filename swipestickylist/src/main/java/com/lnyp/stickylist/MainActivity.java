@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        x.view().inject(this);
 
+        x.view().inject(this);
         musics = new ArrayList<>();
 
         for (int i = 0; i < 4; i++) {
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         musicAdapter = new MusicAdapter(musics, this);
         listViewMusic.setAdapter(musicAdapter);
-
         SwipeMenuCreator swipeMenuCreator = new SwipeMenuCreator() {
             @Override
             public void create(SwipeMenu menu) {
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         listViewMusic.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
             @Override
-            public void onMenuItemClick(int position, SwipeMenu menu, int index) {
+            public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
                 switch (index) {// index即是操作menu添加的顺序
                     case 0:
                         Toast.makeText(MainActivity.this, "编辑 : " + position, Toast.LENGTH_SHORT).show();
@@ -104,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
                         musicAdapter.notifyDataSetChanged();
                         break;
                 }
+
+                return false;
             }
         });
 
