@@ -1,2 +1,2 @@
-include ':swipestickylist', ':xutils'
+include ':swipestickylist', ':readmsglist'
 include ':swipeMenuListView'

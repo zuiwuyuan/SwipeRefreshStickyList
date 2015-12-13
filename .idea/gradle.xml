@@ -9,17 +9,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/readmsglist" />
             <option value="$PROJECT_DIR$/swipeMenuListView" />
             <option value="$PROJECT_DIR$/swipestickylist" />
-            <option value="$PROJECT_DIR$/xutils" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/readmsglist" />
             <option value="$PROJECT_DIR$/swipeMenuListView" />
             <option value="$PROJECT_DIR$/swipestickylist" />
-            <option value="$PROJECT_DIR$/xutils" />
           </set>
         </option>
       </GradleProjectSettings>

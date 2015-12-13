@@ -14,19 +14,19 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 
-import org.xutils.view.annotation.ViewInject;
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
-    @ViewInject(R.id.listViewMusic)
-    private SwipeMenuListView listViewMusic;
+    @Bind(R.id.listViewMusic)
+    public SwipeMenuListView listViewMusic;
 
-    @ViewInject(R.id.swipeRefreshMusic)
-    private SwipeRefreshLayout swipeRefreshMusic;
+    @Bind(R.id.swipeRefreshMusic)
+    public SwipeRefreshLayout swipeRefreshMusic;
 
     private List<Music> musics;
 
@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        x.view().inject(this);
+        ButterKnife.bind(this);
+
         musics = new ArrayList<>();
 
         for (int i = 0; i < 4; i++) {
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         musicAdapter = new MusicAdapter(musics, this);
         listViewMusic.setAdapter(musicAdapter);
+
         SwipeMenuCreator swipeMenuCreator = new SwipeMenuCreator() {
             @Override
             public void create(SwipeMenu menu) {

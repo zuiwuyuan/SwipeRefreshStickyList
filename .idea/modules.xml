@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SwipeRefreshStickyList.iml" filepath="$PROJECT_DIR$/SwipeRefreshStickyList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/readmsglist/readmsglist.iml" filepath="$PROJECT_DIR$/readmsglist/readmsglist.iml" />
       <module fileurl="file://$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" filepath="$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/swipestickylist/swipestickylist.iml" filepath="$PROJECT_DIR$/swipestickylist/swipestickylist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xutils/xutils.iml" filepath="$PROJECT_DIR$/xutils/xutils.iml" />
     </modules>
   </component>
 </project>
