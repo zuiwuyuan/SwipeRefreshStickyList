@@ -103,17 +103,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * 查询我的消息
-     */
-    private void qryDataFromServer() {
-
-    }
-
-    private void updateData() {
-        msgAdapter.notifyDataSetChanged();
-    }
-
     private void createMenu() {
         // step 1. create a MenuCreator
         SwipeMenuCreator creator = new SwipeMenuCreator() {
